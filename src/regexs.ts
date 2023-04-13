@@ -1,0 +1,14 @@
+export const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i;
+export const emailRegexMsg = 'Please enter a valid email address';
+export const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/i;
+export const phoneRegexMsg = 'Please enter a valid phone number';
+export const currencyRegex = /^[-+]?\$(0|[1-9][0-9]{0,2})(,\d{3})*(\.\d{1,2})?$/i;
+export const currencyRegexMsg = 'Please enter a valid currency amount';
+export const percentageRegex = /^100(\.0{0,2})? *%?$|^\d{1,2}(\.\d{1,2})? *%?$/i;
+export const percentageRegexMsg = 'Please enter a valid percentage';
+export const pointRegex = /^100(\.0{0,2})? *?$|^\d{1,2}(\.\d{1,6})? *?$/i;
+export const pointRegexMsg = 'Please enter a valid point';
+export const numberRegex = /^\d+$/i;
+export const numberRegexMsg = 'Please enter a valid point';
+export const creditScoreRegex = /^[3-8][0-9]{2}$|^850$/i;
+export const creditScoreRegexMsg = 'Please enter a valid credit score. (300-850)';
