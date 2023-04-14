@@ -14,6 +14,7 @@ import TempNavbar from "@/components/TempNavbar";
 import GlobalSnackbar from "@/components/GlobalSnackbar";
 import GlobalLoader from "@/components/GlobalLoader";
 import GlobalDialog from "@/components/GlobalDialog";
+import "@/styles/globals.css";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -33,7 +34,8 @@ export default function MyApp(props: MyAppProps) {
       <Provider store={store}>
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <TempNavbar />
+          {/* <TempNavbar /> */}
+          <NextLinkComposed to="/">Home</NextLinkComposed>
           <CssBaseline />
           <GlobalLoader />
           <GlobalSnackbar />

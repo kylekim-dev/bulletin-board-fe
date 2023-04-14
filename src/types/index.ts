@@ -258,3 +258,10 @@ export interface AmortizationTable {
   interestPayment: number;
   totalPayment: number;
 }
+
+export interface Content {
+  id: number;
+  title: string;
+  category: string;
+  body: string;
+}

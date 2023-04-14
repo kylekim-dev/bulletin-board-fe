@@ -14,26 +14,20 @@ interface Content {
   body: string;
 }
 
-const contents: Content[] = [
-  {
-    id: 1,
-    title: "title1 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    category: "category1",
-    body: "body1",
-  },
-  {
-    id: 2,
-    title: "title2",
-    category: "category2",
-    body: "body2",
-  },
-];
+export default function BBS() {
+  const [contents, setContents] = useState<Content[]>([]);
 
-export default function Home() {
-  const [profile, setProfile] = useState<Content[]>(contents);
-  const [value, setValue] = useState<string>('');
+    useEffect(() => {
+        // const fetchData = async () => {
+        //     const result = await fetch('http://localhost:3000/api/bbs')
+        //     const json = await result.json()
+        //     setContents(json)
+        // }
+        // fetchData()
+        setContents(JSON.parse(localStorage.getItem('contents123') || '[]'));
+    }, [])
 
-  const temps = profile.map((item) => {
+  const temps = contents.map((item) => {
     return (
       <div title={item.title} key={item.id}>
         <Box 
@@ -51,7 +45,8 @@ export default function Home() {
   return (
     <div>
       <Container>
-        Hello
+        <h1>This is list</h1>
+        { temps }
       </Container>
     </div>
   );
