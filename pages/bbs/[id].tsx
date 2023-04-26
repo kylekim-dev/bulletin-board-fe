@@ -47,7 +47,7 @@ export default function BBSDetails({ content }: { content: Content }) {
       <Container>
         <div>{content.title}</div>
         <div>
-          글쓴이: AAA | 등록일: 02/03/2019 13:00 | 조회수: 33 | 추천수: 0
+          글쓴이: ### | 등록일: { content.createdAt } | 조회수: ## | 추천수: ##
         </div>
         <Divider />
         <Box minHeight={300}>

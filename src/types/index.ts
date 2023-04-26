@@ -264,7 +264,7 @@ export interface Content {
   title: string;
   category: string;
   body: string;
-  createdAt: Date;
-  publishedAt: Date;
-  updatedAt: Date;
+  createdAt: string;
+  publishedAt: string;
+  updatedAt: string;
 }

@@ -74,9 +74,9 @@ const initContent: Content = {
   title: "",
   category: "",
   body: "",
-  createdAt: current,
-  publishedAt: current,
-  updatedAt: current,
+  createdAt: current.toString(),
+  publishedAt: current.toString(),
+  updatedAt: current.toString(),
 };
 
 export default function Write() {
