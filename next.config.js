@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    PUBLIC_API_URL:'https://localhost:44344',
+    PUBLIC_API_URL:'http://localhost:1337',
   }
 }
 
